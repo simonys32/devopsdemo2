@@ -13,5 +13,11 @@ public class ToDoTest {
         assertEquals("description", toDo1.getDescription());
         assertEquals(1, toDo1.getId());
     }
+     @Test
+    void testToDoDescription() {
+      ToDo todo = new ToDo();
+      todo.setDescription("Test description");
+      assertEquals("Test description", todo.getDescription());
+  }
     
 }
